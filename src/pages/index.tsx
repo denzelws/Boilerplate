@@ -6,7 +6,7 @@ type Props = {
   title: string
 }
 
-export default function Home({ title = 'React Avançado' }) {
+export default function Home({ title = 'React Avançado' }: Props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -16,9 +16,7 @@ export default function Home({ title = 'React Avançado' }) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
