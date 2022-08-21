@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
-    "test:watch": "npm run test -- --watch",
+    "test:watch": "npm run test -- -- --watch",
     "prepare": "husky install",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
@@ -30,11 +30,11 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-typescript": "^7.18.6",
-    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.5.10",
     "@storybook/builder-webpack5": "^6.5.10",
     "@storybook/manager-webpack5": "^6.5.10",
-    "@storybook/react": "^6.5.10",
+    "@storybook/react": "^6.1.21",
     "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
